@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MillionareDBModelStoreContainer" CdmEntityContainer="MillionareDBEntities3">
+    <EntitySetMapping Name="Answers">
+      <EntityTypeMapping TypeName="MillionareDBModel.Answers">
+        <MappingFragment StoreEntitySet="Answers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Questions_FK" ColumnName="Questions_FK" />
+          <ScalarProperty Name="Answer_A" ColumnName="Answer_A" />
+          <ScalarProperty Name="Answer_B" ColumnName="Answer_B" />
+          <ScalarProperty Name="Answer_C" ColumnName="Answer_C" />
+          <ScalarProperty Name="Answer_D" ColumnName="Answer_D" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questions">
+      <EntityTypeMapping TypeName="MillionareDBModel.Questions">
+        <MappingFragment StoreEntitySet="Questions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Difficulty" ColumnName="Difficulty" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
